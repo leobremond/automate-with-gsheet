@@ -44,7 +44,7 @@ def env(key: str, default: Optional[str] = None) -> str:
     return val
 
 def build_pg_url(user: str, password: str, host: str, port: str, db: str) -> str:
-    return f"postgresql://{user}:{password}@{host}:{port}/{db}?sslmode=require""
+    return f"postgresql://{user}:{password}@{host}:{port}/{db}?sslmode=require"
 
 # ─── Google Sheets ────────────────────────────────────────────────────────────
 def read_worksheet(sheet_id: str, worksheet: str, sa_json: str) -> pd.DataFrame:
